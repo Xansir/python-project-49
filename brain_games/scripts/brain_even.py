@@ -1,6 +1,7 @@
 import random
 import prompt
 from brain_games.scripts import brain_games1
+import brain_games.cli
 
 brain_games1.main()
 print('Print "yes" if number even otherwise "no".')
@@ -18,11 +19,11 @@ while win_count < 3:
         win_count += 1
     else:
         print(answer + ' is a wrong answer, correct answer was ' + correct)
-        print("Let's try again")
+        brain_games.cli.user_lose()
         win_count = 0
         break
 if win_count == 3:
-    print("Congratulations! ")
+    brain_games.cli.user_win()
 
 
 def main():

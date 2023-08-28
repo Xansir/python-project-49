@@ -1,6 +1,18 @@
 import prompt
+name = None
 
 
 def user_welcome():
-    name = prompt.string('May I have your name? ')
-    return print("Hello, " + name)
+    print('May I have your name?')
+    global name
+    name = input()
+    return print('Hello, ' + name)
+
+
+def user_win():
+    print('Congratulations, ' + name + '!')
+
+
+def user_lose():
+    print("Let's try again " + name + '!')
+
