@@ -1,0 +1,33 @@
+import random
+import prompt
+from brain_games.scripts import brain_games1
+
+brain_games1.main()
+print('Print "yes" if number even otherwise "no".')
+win_count = 0
+while win_count < 3:
+    number = random.randint(0, 40)
+    print('Question:' + str(number))
+    answer = prompt.string('Your answer:')
+    if number % 2 == 0:
+        correct = 'yes'
+    else:
+        correct = 'no'
+    if answer == correct:
+        print('Correct!')
+        win_count += 1
+    else:
+        print(answer + ' is a wrong answer, correct answer was ' + correct)
+        print("Let's try again")
+        win_count = 0
+        break
+if win_count == 3:
+    print("Congratulations! ")
+
+
+def main():
+    return None
+
+
+if __name__ == '__main__':
+    main()
