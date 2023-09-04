@@ -3,12 +3,15 @@ import prompt
 from brain_games.scripts import brain_games1
 import brain_games.cli
 
+# Easy game choice number is even
+
+
 brain_games1.main()
 print('Print "yes" if number even otherwise "no".')
 win_count = 0
 while win_count < 3:
     number = random.randint(0, 40)
-    print('Question:' + str(number))
+    print('Question: ' + str(number))
     answer = prompt.string('Your answer:')
     if number % 2 == 0:
         correct = 'yes'
