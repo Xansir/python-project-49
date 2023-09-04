@@ -7,7 +7,7 @@ import brain_games.cli
 
 
 brain_games1.main()
-print('Answer "yes" if the number is even, otherwise "no".')
+print('Answer "yes" if the number is even, otherwise answer "no".')
 win_count = 0
 while win_count < 3:
     number = random.randint(0, 40)
