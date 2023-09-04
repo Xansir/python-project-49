@@ -8,7 +8,7 @@ win_count = 0
 print('What number is missing in the progression?')
 while win_count < 3:
     num_ls = [random.randint(0, 10)]
-    up_count = random.randint(0, 20)
+    up_count = random.randint(1, 20)
     for i in range(10):
         num_ls.append(num_ls[i] + up_count)
     correct_answer = random.choice(num_ls)
