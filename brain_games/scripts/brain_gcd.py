@@ -10,13 +10,13 @@ while win_count < 3:
     print('Find the greatest common divisor of given numbers.')
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
-    question = math.gcd(num1, num2)
+    correct_answer = math.gcd(num1, num2)
     answer = prompt.string('Question: ' + str(num1) + ' ' + str(num2) + '\nYour answer:')
-    if answer == str(question):
+    if answer == str(correct_answer):
         print('Correct!')
         win_count += 1
     else:
-        print("'" + str(answer) + "' is a wrong answer, correct answer was '" + str(question) + "'")
+        print("'" + str(answer) + "' is a wrong answer, correct answer was '" + str(correct_answer) + "'")
         brain_games.cli.user_lose()
         win_count = 0
         break

@@ -7,7 +7,7 @@ import brain_games.cli
 
 
 brain_games1.main()
-print('Print "yes" if number even otherwise "no".')
+print('Answer "yes" if number even otherwise "no".')
 win_count = 0
 while win_count < 3:
     number = random.randint(0, 40)
@@ -21,7 +21,7 @@ while win_count < 3:
         print('Correct!')
         win_count += 1
     else:
-        print(f"'{answer}' is a wrong answer ;(. correct answer was '{correct}")
+        print(f"'{answer}' is a wrong answer ;(. correct answer was '{correct}'")
         brain_games.cli.user_lose()
         win_count = 0
         break
