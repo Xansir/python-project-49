@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Xansir/python-project-49/workflows/hexlet-check/badge.svg)](https://github.com/Xansir/python-project-49/actions)
 
 ###CodeClimate: 
-[![Maintainability](https://codeclimate.com/github/Xansir/python-project-49/maintainability)]()https://api.codeclimate.com/v1/badges/52c5ed00d3d1e8f3e11f/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/52c5ed00d3d1e8f3e11f/maintainability)](https://codeclimate.com/github/Xansir/python-project-49/maintainability)
 
 ###Asciinema brain-even:
 https://asciinema.org/a/BcoIVxP96oqJEbTYA2l3zUG8E

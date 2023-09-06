@@ -15,7 +15,8 @@ while win_count < 3:
     for i in range(len(num_ls)):
         if num_ls[i] == correct_answer:
             num_ls[i] = '..'
-    answer = prompt.string('Question: ' + str(num_ls) + '\nYour answer:')
+    progression = " ".join(str(x) for x in num_ls)
+    answer = prompt.string(f'Question: {progression}\nYour answer: ')
     if answer == str(correct_answer):
         print('Correct!')
         win_count += 1
