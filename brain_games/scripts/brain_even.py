@@ -21,7 +21,7 @@ while win_count < 3:
         print('Correct!')
         win_count += 1
     else:
-        print(f"'{answer}' is a wrong answer ;(. correct answer was '{correct}'")
+        print(f"'{answer}' is a wrong answer. correct answer was '{correct}'")
         brain_games.cli.user_lose()
         win_count = 0
         break

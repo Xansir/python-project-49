@@ -11,18 +11,18 @@ while win_count < 3:
     num2 = random.randint(0, 30)
     act = random.choice(['+', '-', '*'])
     if act == '-':
-        correct_answer = (num1 - num2)
+        correct = (num1 - num2)
     if act == '+':
-        correct_answer = (num1 + num2)
+        correct = (num1 + num2)
     if act == '*':
-        correct_answer = (num1 * num2)
+        correct = (num1 * num2)
     print(f'Question: {num1} {act} {num2}')
     answer = prompt.string('Your answer:')
-    if answer == str(correct_answer):
+    if answer == str(correct):
         print('Correct!')
         win_count += 1
     else:
-        print(str(answer) + ' is a wrong answer, correct answer was ' + str(correct_answer))
+        print(f"'{answer}' is a wrong answer, correct answer was '{correct}'")
         brain_games.cli.user_lose()
         win_count = 0
         break
@@ -36,4 +36,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

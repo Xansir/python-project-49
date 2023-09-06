@@ -11,17 +11,17 @@ while win_count < 3:
     up_count = random.randint(1, 20)
     for i in range(10):
         num_ls.append(num_ls[i] + up_count)
-    correct_answer = random.choice(num_ls)
+    correct = random.choice(num_ls)
     for i in range(len(num_ls)):
-        if num_ls[i] == correct_answer:
+        if num_ls[i] == correct:
             num_ls[i] = '..'
     progression = " ".join(str(x) for x in num_ls)
     answer = prompt.string(f'Question: {progression}\nYour answer: ')
-    if answer == str(correct_answer):
+    if answer == str(correct):
         print('Correct!')
         win_count += 1
     else:
-        print("'" + str(answer) + "' is a wrong answer, correct answer was '" + str(correct_answer) + "'")
+        print(f"'{answer}' is a wrong answer, correct answer was '{correct}'")
         brain_games.cli.user_lose()
         win_count = 0
         break

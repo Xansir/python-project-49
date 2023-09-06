@@ -10,16 +10,16 @@ while win_count < 3:
     num = random.randint(2, 100)
     for i in range(2, int(num ** 0.5) + 1):
         if num % i == 0:
-            correct_answer = 'no'
+            correct = 'no'
             break
         if num % i != 0:
-            correct_answer = 'yes'
-    answer = prompt.string('Question: ' + str(num) + '\nYour answer:')
-    if answer == str(correct_answer):
+            correct = 'yes'
+    answer = prompt.string(f'Question: {num}\nYour answer:')
+    if answer == str(correct):
         print('Correct!')
         win_count += 1
     else:
-        print("'" + str(answer) + "' is a wrong answer, correct answer was '" + str(correct_answer) + "'")
+        print(f"'{answer}' is a wrong answer, correct answer was '{correct}'")
         brain_games.cli.user_lose()
         win_count = 0
         break

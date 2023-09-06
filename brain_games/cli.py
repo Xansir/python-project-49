@@ -1,4 +1,3 @@
-import prompt
 name = None
 
 
