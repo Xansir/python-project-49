@@ -10,9 +10,8 @@ def user_welcome():
 
 
 def user_win():
-    print('Congratulations, ' + name + '!')
+    print(f"Congratulations, {name}!")
 
 
 def user_lose():
-    print("Let's try again " + name + '!')
-
+    print(f"Let's try again, {name}!")
