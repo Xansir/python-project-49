@@ -16,7 +16,7 @@ while win_count < 3:
         correct_answer = (num1 + num2)
     if act == '*':
         correct_answer = (num1 * num2)
-    print('Question: ' + str(num1) + act + str(num2))
+    print(f'Question: {num1} {act} {num2}')
     answer = prompt.string('Your answer:')
     if answer == str(correct_answer):
         print('Correct!')
