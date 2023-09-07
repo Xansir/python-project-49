@@ -9,6 +9,6 @@ def game_task():
         if question % i == 0:
             correct = 'no'
             break
-        if question % i != 0:
+        else:
             correct = 'yes'
     return question, correct
