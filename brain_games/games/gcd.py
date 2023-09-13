@@ -4,7 +4,7 @@ import random
 DESCRIPTION = "Find the greatest common divisor of given numbers."
 
 
-def game_task():
+def play_game():
     num1 = random.randint(1, 50)
     num2 = random.randint(1, 50)
     correct = math.gcd(num1, num2)

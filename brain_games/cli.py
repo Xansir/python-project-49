@@ -6,11 +6,3 @@ def user_welcome():
     global name
     name = input()
     return print('Hello, ' + name)
-
-
-def user_win():
-    print(f"Congratulations, {name}!")
-
-
-def user_lose():
-    print(f"Let's try again, {name}!")
