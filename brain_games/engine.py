@@ -6,7 +6,7 @@ WINSTRIKE = 3
 
 
 def start_game(game):
-    brain_games.scripts.brain_games_module.main()
+    brain_games_module.main()
     print(game.DESCRIPTION)
     win_count = 0
     while win_count < WINSTRIKE:
