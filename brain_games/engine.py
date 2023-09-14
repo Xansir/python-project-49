@@ -1,12 +1,12 @@
 import prompt
-import brain_games.cli
-from brain_games.scripts import brain_games_module
 
 WINSTRIKE = 3
 
 
 def start_game(game):
-    brain_games_module.main()
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name?\n')
+    print('Hello, ' + name)
     print(game.DESCRIPTION)
     win_count = 0
     while win_count < WINSTRIKE:
@@ -14,9 +14,9 @@ def start_game(game):
         if answer_comparsion(question, correct):
             win_count += 1
         else:
-            return print(f"Let's try again, {brain_games.cli.name}!")
+            return print(f"Let's try again, {name}!")
     if win_count == WINSTRIKE:
-        print(f"Congratulations, {brain_games.cli.name}!")
+        print(f"Congratulations, {name}!")
 
 
 def answer_comparsion(question, correct):

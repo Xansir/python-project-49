@@ -1,8 +1,7 @@
-name = None
+#!/usr/bin/env python3
+import prompt
 
 
 def user_welcome():
-    print('May I have your name?')
-    global name
-    name = input()
+    name = prompt.string('May I have your name? ')
     return print('Hello, ' + name)
