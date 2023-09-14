@@ -4,7 +4,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def play_game():
-    question = random.randint(2, 100)
+    question = random.randint(2, 99)
     if is_prime(question):
         correct = 'yes'
     else:
