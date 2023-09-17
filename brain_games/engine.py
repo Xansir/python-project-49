@@ -11,7 +11,7 @@ def start_game(game):
     win_count = 0
     while win_count < WINSTRIKE:
         question, correct = game.play_game()
-        if answer_comparsion(question, correct):
+        if compare_answers(question, correct):
             win_count += 1
         else:
             return print(f"Let's try again, {name}!")
@@ -19,7 +19,7 @@ def start_game(game):
         print(f"Congratulations, {name}!")
 
 
-def answer_comparsion(question, correct):
+def compare_answers(question, correct):
     print(f'Question: {question}')
     answer = prompt.string('Your answer: ')
     if answer == str(correct):
